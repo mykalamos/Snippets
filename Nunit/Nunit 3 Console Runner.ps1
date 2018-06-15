@@ -21,7 +21,7 @@ $cmdLine = "$srcRoot\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe
 	| Where-Object { `
 			$_.FullName -like "*\bin\$configuration\$targetAssemblyPrefix.Unit.dll" `
 		-or $_.FullName -like "*\bin\$configuration\$targetAssemblyPrefix.Integration.dll" } `
-	| sort-object -Unique Name `
+	| Sort-Object -Unique Name `
 	| % FullName `
 ) + $nunitArgs
 
