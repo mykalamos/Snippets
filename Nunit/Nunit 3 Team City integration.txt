@@ -1,0 +1,4 @@
+TeamCity listener package must be available for TeamCity to pick up test results e.g.
+
++:packages/NUnit.ConsoleRunner.3.8.0
++:packages/NUnit.Extension.TeamCityEventListener.1.0.3
