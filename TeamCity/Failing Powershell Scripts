@@ -1,0 +1,8 @@
+1. Write-Error <message>
+2. In TC build configuration
+  -> Failure Conditions
+    -> Check "an error message is logged by the build runner"
+
+Exit(NonZero) does not seem to have an impact.
+
+Accurate at TeamCity Enterprise 10.0.4 (build 42538)
