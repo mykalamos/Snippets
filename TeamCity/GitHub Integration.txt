@@ -1,4 +1,5 @@
-# Pull Request automated builds
+# Pull Request automated builds 
+# VCS root Branch specification:
 
 +:refs/heads/(master)
 +:refs/heads/feature/(*)
