@@ -22,9 +22,8 @@ else
     exit(1)
 }
 
-$retries = 3
-
-for($i=1; $i -le $retries+1; $i++)
+$maxIterations = 5
+for($i=1; $i -le $maxIterations; $i++)
 {
 	$taskIdJson = Invoke-RestMethod -Uri $taskIdUrl
 	$taskIdStatus = $taskIdJson.task.status
@@ -33,9 +32,12 @@ for($i=1; $i -le $retries+1; $i++)
 	{
 		break;
 	}
-	$seconds = [System.Convert]::ToInt32([System.Math]::Pow(2, $i))
-	Write-Host "taskIdStatus = $taskIdStatus. Retrying in $seconds seconds"
-	Start-Sleep -s $seconds
+	if($i -ne $maxIterations) 
+	{
+		$seconds = [System.Convert]::ToInt32([System.Math]::Pow(2, $i))
+		Write-Host "taskIdStatus = $taskIdStatus. Retrying in $seconds seconds"
+		Start-Sleep -s $seconds
+	}
 }
 
 if($taskIdStatus -ne "SUCCESS")
@@ -45,7 +47,7 @@ if($taskIdStatus -ne "SUCCESS")
 }
 
 $analysisId = $taskIdJson.task.analysisId
-$analysisUrl = "http://cibldnlappvd106:9000/api/qualitygates/project_status?analysisId=$analysisId"
+$analysisUrl = "http://<host>:<port>/api/qualitygates/project_status?analysisId=$analysisId"
 
 Write-Host "Analysis URL = $analysisUrl"
 
