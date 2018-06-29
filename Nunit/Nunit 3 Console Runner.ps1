@@ -4,7 +4,7 @@ Param(
 	)
 
 $srcRoot="$PSScriptRoot\..\..\src"
-$targetAssemblyPrefix="MRS.*Tests"
+$targetAssemblyPrefix="XYZ.*Tests"
 
 Push-Location $srcRoot
 pwd
