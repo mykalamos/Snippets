@@ -1,0 +1,5 @@
+# Pull Request automated builds
+
++:refs/heads/(master)
++:refs/heads/feature/(*)
++:refs/pull/(*/merge) <-- autobuild of pull requests
