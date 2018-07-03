@@ -1,0 +1,44 @@
+https://plugins.jetbrains.com
+
+- GitHub Commit Hooks
+- Add to teamCity plugins
+- Restart teamCity service
+
+- GitHub
+
+Personal Settings -> Developer Settings
+
+Administration -> Root Project -> Connections -> Add Connections
+Connection Type: GitHub Enterprise
+Client ID
+xxxx
+Client Secret
+yyyyyyyy
+
+-- Team City
+
+Please register TeamCity OAuth application on GitHub Enterprise server using the following parameters:
+Homepage URL:	<TeamCityURL>
+Callback URL:	TeamCityURL>/oauth/github/accessToken.html 
+
+
+-- TeamCity project settings
+-> Actions -> Install GitHub Webhook
+Enter URL to git repo
+
+-- Extract certificate
+
+Extract the root certificate as a base64-encoded X.509 CER/PEM file
+
+
+%TeamCityInstallDir%\jre\bin\keytool.exe  -importcert -trustcacerts -file CompanyRoot.cer -alias ca_alias -keystore "%TeamCityInstallDir%\jre\lib\security\cacerts"
+
+keytool.exe  -importcert -trustcacerts -file c:\temp\github.x509.Base64.cer -alias ca_alias -keystore "D:\TeamCity\jre\lib\security\cacerts" -storepass
+
+Default pwd: changeit
+
+Restart TeamCity 
+
+
+
+
