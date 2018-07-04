@@ -6,7 +6,7 @@ $nunitConsole="$checkoutDir\src\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-
 $dotCoverRoot="$PSScriptRoot\..\..\..\..\tools\dotCover"
 $dotCoverOutputFile="$checkoutDir\dotCover_output.html"
 $filters="-:type=$appPrefix.*Tests.*;+:type=$appPrefix.*;"
-$targetAssemblyPrefix="MRS.*Tests"
+$targetAssemblyPrefix="<Prefix>.*Tests"
 $attributeFilters="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute"
 
 Push-Location $srcRoot
