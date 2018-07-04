@@ -35,4 +35,4 @@ git merge master # do this before submitting pull request
 git branch -d feature/feature/JIRA-1234-DoSomething # local branch
 git fetch -p # If branch has already been deleted remotely this will clean up remote refs
 git push origin --delete feature/JIRA-1234-DoSomething # remote branch
-```bash
+```
