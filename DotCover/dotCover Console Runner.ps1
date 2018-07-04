@@ -13,7 +13,6 @@ $attributeFilters="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttrib
 Push-Location $srcRoot
 pwd
 
-# N.B. We're ignoring the Integration Tests for now
 $testFileList = `
 ( `
 	ls -Recurse `
