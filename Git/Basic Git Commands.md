@@ -18,7 +18,7 @@ git checkout -b feature/JIRA-1234-DoSomething # this will create a branch in you
 ```bash
 git add . # adds all changes in your working copy to the index. This is known as staging
 git commit -m "MRS-1234 some comment" # creates a commit in your local repository of all the changes in the index
-git push -u feature/feature/JIRA-1234-DoSomething # sets upstream branch. Subsequently just use git push
+git push -u feature/JIRA-1234-DoSomething # sets upstream branch. Subsequently just use git push
 ```
 ### Amending changes
 ```bash
