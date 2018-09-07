@@ -1,3 +1,6 @@
+# Default branch
+refs/heads/master
+
 # Pull Request automated builds 
 # VCS root Branch specification:
 
