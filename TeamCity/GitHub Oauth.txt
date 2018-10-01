@@ -11,19 +11,23 @@ Administration -> Plugins (LHS menu) -> Available plugins
 
 Personal Settings -> Developer Settings
 
-Administration -> Root Project -> Connections -> Add Connections
-Connection Type: GitHub Enterprise
-Client ID
-xxxx
-Client Secret
-yyyyyyyy
-
--- Team City
-
 Please register TeamCity OAuth application on GitHub Enterprise server using the following parameters:
 Homepage URL:	<TeamCityURL>
 Callback URL:	TeamCityURL>/oauth/github/accessToken.html 
 
+Will generate client id and secret
+
+-- Team City
+
+Administration -> Root Project -> Connections -> Add Connections
+Connection Type: GitHub Enterprise
+Server URL <Github URL>
+Client ID xxxx
+Client Secret yyyyyyyy
+
+- Go to VCS root and click on GitHub icon next to URL
+Sign in to Github
+**** TODO ****
 
 -- TeamCity project settings
 -> Actions -> Install GitHub Webhook
@@ -31,7 +35,7 @@ Enter URL to git repo
 
 -- Extract certificate
 
-Extract the root certificate as a base64-encoded X.509 CER/PEM file
+Extract the root certificate as a base64-encoded X.509 CER/PEM file by navigating using browser and right-clicking green lock in icon on LHS of address bar.
 
 
 %TeamCityInstallDir%\jre\bin\keytool.exe  -importcert -trustcacerts -file CompanyRoot.cer -alias ca_alias -keystore "%TeamCityInstallDir%\jre\lib\security\cacerts"
