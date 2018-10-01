@@ -1,6 +1,9 @@
-https://plugins.jetbrains.com
+-- TeamCity
 
-- GitHub Commit Hooks
+Administration -> Plugins (LHS menu) -> Available plugins
+      https://plugins.jetbrains.com
+
+- Download GitHub Commit Hooks (teamcity-commit-hooks.zip)
 - Add to teamCity plugins
 - Restart teamCity service
 
