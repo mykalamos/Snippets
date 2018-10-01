@@ -27,7 +27,9 @@ Client Secret yyyyyyyy
 
 - Go to VCS root and click on GitHub icon next to URL
 Sign in to Github
-**** TODO ****
+Authorize TeamCity button (popup closes)
+Select repo from resulting dropdown
+Save VCS root
 
 -- TeamCity project settings
 -> Actions -> Install GitHub Webhook
