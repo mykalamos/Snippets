@@ -1,8 +1,11 @@
 1. In repository create Readme.md with following code snippet:
-# Regression
-
+# Projects
 <a href="http://<teamCityUrl>/project.html?projectId=<projectIdString>&tab=projectOverview">
 <img src="http://<teamCityUrl>/app/rest/builds/aggregated/strob:(buildType:(project:(id:<projectIdString>)))/statusIcon.svg"/>
+</a>
+# Configurations
+<a href="http://<teamCityUrl>/viewType.html?buildTypeId=Omniview">
+  <img src="http://<teamCityUrl>/app/rest/builds/buildType(id:Omniview)/statusIcon"/>
 </a>
 
 2. In TeamCity -> Enable Status Widget.
