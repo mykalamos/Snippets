@@ -17,10 +17,10 @@
 
 1. General Settings -> Enable Status Widget.
 2. Enabling Pull requests and feature branch builds
-
+```
 VCS root -> Branch Specification:
 +:refs/heads/(master)
 +:refs/heads/feature/(*)
 +:refs/pull/(*/merge)
-
+```
 
