@@ -7,5 +7,5 @@ refs/heads/master
 ```
 +:refs/heads/(master)
 +:refs/heads/feature/(*)
-+:refs/pull/(*/merge) <-- autobuild of pull requests
++:refs/pull/(*/merge)
 ```
