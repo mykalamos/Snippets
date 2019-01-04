@@ -1,0 +1,13 @@
+Param(
+	[string] $Version = $(Throw "Version not supplied"),
+	[string] $Configuration='Release'
+)
+Write-Output "*** Executing $($MyInvocation.MyCommand.Name) ***"
+
+[string] $packageSourcePath = 'TODO';
+[string] $packageTargetPath = 'TODO';
+
+# Pushing to nuget file system
+dotnet nuget push $packageSourcePath --no-service-endpoint -s $packageTargetPath
+
+exit $LastExitCode
