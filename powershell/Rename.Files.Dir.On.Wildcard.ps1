@@ -1,5 +1,11 @@
-Get-Childitem -Directory -File -Recurse | ForEach-Object {
+Get-Childitem -Path c:\temp -File -Recurse | ForEach-Object {
     $a=$_.Name
-    $b=$a -replace "Prefix.OldName","Prefix.NewName"
-    If ($a -ne $b) { Rename-Item $a $b }
-}
+    $b=$a -replace "UnwantedString",""
+
+    If ($a -ne $b) { 
+        Write-Host $a => $b;
+        Rename-Item $a $b;
+    }
+};
+
+# -File can be replaced with -Directory but both dont seem to work together
