@@ -1,0 +1,1 @@
+Action<MyType> a = (_) => { };
