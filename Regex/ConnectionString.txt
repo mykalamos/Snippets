@@ -1,0 +1,1 @@
+(?:connectionString="|\<value\>).*(?:Server|Data Source)=((?:[a-z0-9\(\)\\_-])+);.*(?:Database|Initial Catalog)=((?:[a-z0-9\(\)\\_])+).*(?:"|\</value\>)
