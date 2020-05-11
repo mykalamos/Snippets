@@ -1,8 +1,8 @@
 ﻿cls
 gci -Directory C:\users\riky\documents\code\News\packages | select -ExpandProperty fullName | 
 %{ 
-    $s = $_ -replace ':',''; 
-    $s = $s -replace '\\','/';
+    [string] $s = $_;
+    ((':',''), ('\\','/')) | %{$s = $s -replace $_[0],$_[1]}
     "cd /$s" ;
     "git add ."
     "git ci -m `"Package commit`""
