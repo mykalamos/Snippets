@@ -11,4 +11,5 @@ git config --global alias.cm 'checkout master'
 git config --global alias.mm 'merge master'
 git config --global alias.fm 'fetch origin master:master'
 git config --global alias.cob 'checkout -b'
+git config --global alias.fmcm '!git fm && git cm'
 ```
