@@ -17,4 +17,5 @@ git config --global alias.cob 'checkout -b'
 git config --global alias.fmcm '!git fm && git cm'
 git config --global alias.fdcd '!git fd && git cd'
 git config --global alias.fp 'fetch -p'
+git config --global alias.lo 'log --oneline'
 ```
