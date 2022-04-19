@@ -21,5 +21,6 @@ git config --global alias.lo 'log --oneline'
 git config --global alias.la 'config --get-regexp alias'
 git config --global alias.lo1 'lo -n 1'
 git config --global alias.lo5 'lo -n 5'
+git config --global alias.lon '!f() { git lo -n $1; }; f'
 git config --global alias.pushd 'push -u origin HEAD'
 ```
