@@ -19,4 +19,7 @@ git config --global alias.fdcd '!git fd && git cd'
 git config --global alias.fp 'fetch -p'
 git config --global alias.lo 'log --oneline'
 git config --global alias.la 'config --get-regexp alias'
+git config --global alias.lo1 'lo -n 1'
+git config --global alias.lo5 'lo -n 5'
+git config --global alias.pushd 'push -u origin HEAD'
 ```
