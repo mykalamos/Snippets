@@ -6,6 +6,7 @@ git config --get-regexp alias
 ```bash
 git config --global alias.st status
 git config --global alias.ci commit
+git config --global alias.cia 'ci -a'
 git config --global alias.co checkout
 git config --global alias.cm 'checkout master'
 git config --global alias.cd 'checkout develop'
