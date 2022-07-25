@@ -1,1 +1,1 @@
-Get-ChildItem -Recurse -Include *.config | Select-String "Some config" -List | Select Path
+gci -Recurse -Include *.config | Select-String "Some config" -List | Select Path
