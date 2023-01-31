@@ -25,6 +25,6 @@ git config --global alias.lo5 'lo -n 5'
 git config --global alias.lon '!f() { git lo -n $1; }; f'
 git config --global alias.pushd 'push -u origin HEAD'
 git config --global alias.pu push
-git config --global alias.pod pull origin develop
-git config --global alias.pom pull origin main
+git config --global alias.pod 'pull origin develop'
+git config --global alias.pom 'pull origin main'
 ```
