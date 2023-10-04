@@ -28,4 +28,5 @@ git config --global alias.pushd 'push -u origin HEAD'
 git config --global alias.pu push
 git config --global alias.pod 'pull origin develop'
 git config --global alias.pom 'pull origin main'
+git config --global alias.acp '!git add . && git cia && git pushd'
 ```
