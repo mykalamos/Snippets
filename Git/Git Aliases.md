@@ -29,4 +29,7 @@ git config --global alias.pu push
 git config --global alias.pod 'pull origin develop'
 git config --global alias.pom 'pull origin main'
 git config --global alias.acp '!git add . && git cia && git pushd'
+git config --global user.email "kalamos.github@outlook.com"
+git config --global user.name "Riky Choudhuri"
+
 ```
